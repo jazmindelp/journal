@@ -1,0 +1,237 @@
+
+.tasks-overview{
+    background-color: #8E7A7D;
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 2px 4px rgba(0, 0, 0, .25);
+    display: flex;
+    flex-direction: column;
+    margin: 0.2em 2em;
+    padding: 0.8em;
+    border-radius: 4px;
+}
+
+
+.tasks-overview-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.task-overview-item{
+    padding: 0.75em 0.9em;
+    background-color: #f7f4eeea;
+    width: 20em;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: 0.06em;
+    color: #8e7a7d;
+    border-radius: 4px;
+    box-shadow:  #261f2281 2px 2px 4px;
+}
+
+.task-list{
+    height: 50vh;
+    overflow: scroll;
+}
+
+h1{
+    font-size: 1.3em;
+    color: #383636ea;
+   
+}
+
+p{
+    padding: 0.6em;
+    font-size: 0.9em;
+    letter-spacing: 0.14em;
+    color: #FFFF;
+}
+
+.upcoming-tasks-title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tasks-container{
+    display: flex;
+    margin: 2em;
+    padding: 0.8em ;
+    border-radius: 4px;
+    justify-content: center;
+
+}
+.task-info{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0;
+    overflow: scroll;
+    padding-right: 1em;
+    margin-bottom: 6em;
+}
+
+.upcoming-tasks{
+    letter-spacing: 0.06em;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: #AC4E29;
+}
+
+.task-item{
+    background-color: #9b7662;
+    padding: 0.5em;
+    margin-bottom: 0.6em;
+    color: #FFFF;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 1.1em;
+    letter-spacing: 0.05em;
+    font-weight: 300;
+    min-height: 2.5em;
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 2px 4px rgba(0, 0, 0, .25);
+    min-height: 56px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.task-item:hover{
+    background-color: #9b7662e1;
+    transform: scale(1.01, 1.01);
+    transition: 100ms;
+    box-shadow:  #261f2281 1px 1px 4px;
+}
+
+.task-title{
+    letter-spacing: 0.04em;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 0.8em;
+    margin-bottom: 1em;
+    font-weight: lighter;
+    padding: 0.3em;
+}
+
+
+.calendar-container{
+    width: 240px;
+    height: auto;
+    font-size: 0.9em;
+    background-color: #ac4e2991;
+    margin-top: 1.8em;
+    margin-left: 1.6em;
+}
+
+.all-tasks{
+    display: flex;
+    width: 50%;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+.all-tasks-list{
+    width: 90%;
+  
+}
+
+.all-tasks-item{
+    background-color: #F7F4EE;
+    padding: 0.8em;
+    margin-bottom: 0.6em;
+    color: #AC4E29;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 1.1em;
+    letter-spacing: 0.05em;
+    font-weight: 300;
+    min-height: 2.5em;
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 2px 4px rgba(0, 0, 0, .25);
+}
+
+.all-tasks-item:hover{
+    background-color: #e4e1dc6b;
+    transform: scale(1.01, 1.01);
+    transition: 100ms;
+    box-shadow:  #261f2281 1px 1px 4px;
+}
+
+.icon-delete-task{
+    width: 1em;
+    margin: 0em;
+    padding: 0em;
+   
+    top: -0.2em;
+}
+.icon-delete-task:hover{
+    cursor: pointer;
+   
+}
+
+
+.task-priority-tag-high{
+    font-size: 0.8rem;
+    letter-spacing: 0.01em;
+    font-family: 'Hubballi', cursive;
+    text-transform: capitalize;
+    background-color: #f44336c9;
+    padding: 0.2em;
+    border-radius: 2px;
+
+}
+
+.task-priority-tag-medium{
+    font-size: 0.8rem;
+    letter-spacing: 0.01em;
+    font-family: 'Hubballi', cursive;
+    text-transform: capitalize;
+    background-color: #e6810dbb;
+    padding: 0.2em;
+    border-radius: 2px;
+}
+
+.task-priority-tag-low{
+    font-size: 0.8rem;
+    letter-spacing: 0.01em;
+    font-family: 'Hubballi', cursive;
+    text-transform: capitalize;
+    background-color: #ad4c2cc0;
+    padding: 0.2em;
+    border-radius: 2px;
+}
+
+.delete-task-container{
+ display: flex;
+ margin-right: 0.2em;
+ align-items: center;
+}
+
+.mark-done{
+    margin-right: 0.3em;
+}
+.side-task-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.filter-by{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+select{
+    outline: none;
+    height: 2em;
+    background-color: #F7F4EE;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 2px 4px rgba(0, 0, 0, .25);
+    position: relative;
+    padding: 0em 0.4em;
+    margin: 0;
+    font-family: inherit;
+    line-height: inherit;
+}
+
+
+

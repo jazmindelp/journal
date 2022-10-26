@@ -1,0 +1,81 @@
+// import React, { useRef } from 'react'
+// import { Parallax, ParallaxLayer } from '@react-spring/parallax'
+// import { auth, provider} from '../Firebase'
+// import { signInWithPopup } from 'firebase/auth';
+// import { useNavigate } from 'react-router-dom';
+
+
+
+// const Welcome = ({setIsAuth, isAuth}) =>{
+    
+//     let navigate = useNavigate();
+        
+//     const signInWithGoogle = () =>{
+ 
+//           signInWithPopup(auth, provider).then((result) =>{
+//               localStorage.setItem("isAuth", true);
+//               setIsAuth(true);
+//               navigate('/home') 
+            
+//           }).catch((error) =>{
+//               console.log(error);
+//           });
+         
+//       }
+//     const ref = useRef();
+//     return (
+//         <div style={{ background: '#F7F4EE' }}>
+//         <Parallax  ref={ref}
+//                    pages={1.2} 
+//                    horizontal 
+//                    style={{overflow:'scroll', margin: '0', overflow: 'hidden'}}>
+//           <ParallaxLayer  offset={0} 
+//                           style={{
+//                               backgroundColor: '#928F7C', 
+//                               width: '53%', 
+//                               margin:'0',
+//                               display: 'flex',}}>
+           
+//             <div className='welcome-page'>
+//             <h1 id='app-title'>Journal</h1>
+//             <h1 className='welcome-title'>WELCOME</h1>
+//             <p className='welcome-text'>Let us help you remember things</p>
+//             <button onClick={signInWithGoogle} className="login">
+//                 Log in with Google
+//             </button> 
+//             <div className='info'>
+//                 <p className='info-title'>About me</p>
+//                 <a href="https://www.linkedin.com/in/jazm%C3%ADn-del-puerto-61397222a/" target="_blank" rel="noopener noreferrer">
+//                     <img  className="icon"src='https://cdn-icons-png.flaticon.com/512/174/174857.png' alt=""/>
+//                 </a>
+                    
+//                 <a href="https://github.com/jazmindelp" target="_blank" rel="noopener noreferrer">
+//                     <img className="icon"src='https://cdn-icons-png.flaticon.com/512/25/25231.png' alt=""/>
+//                 </a>
+//                         </div>
+                     
+//             </div>
+//             <button className='create-acc-btn' onClick={() => ref.current.scrollTo(1)}>
+//                 About
+//             </button>
+           
+            
+//          </ParallaxLayer>
+//           <ParallaxLayer  offset={0.95} 
+//                           style={{
+//                               backgroundColor: '#551516fa', 
+//                               width: '10%'}}>
+//         <div className='login-page'>
+           
+//       <button  onClick={() => ref.current.scrollTo(0)}>
+//           Go back
+//       </button>  
+//        </div>  
+//           </ParallaxLayer>
+              
+//         </Parallax>
+//       </div>
+//     )
+// };
+
+// export default Welcome;
